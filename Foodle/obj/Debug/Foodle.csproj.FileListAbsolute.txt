@@ -1,0 +1,9 @@
+C:\Users\acer\source\repos\Foodle\Foodle\obj\Debug\Foodle.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\Foodle\Foodle\obj\Debug\Foodle.Properties.Resources.resources
+C:\Users\acer\source\repos\Foodle\Foodle\obj\Debug\Foodle.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\Foodle\Foodle\obj\Debug\Foodle.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\Foodle\Foodle\bin\Debug\Foodle.exe.config
+C:\Users\acer\source\repos\Foodle\Foodle\bin\Debug\Foodle.exe
+C:\Users\acer\source\repos\Foodle\Foodle\bin\Debug\Foodle.pdb
+C:\Users\acer\source\repos\Foodle\Foodle\obj\Debug\Foodle.exe
+C:\Users\acer\source\repos\Foodle\Foodle\obj\Debug\Foodle.pdb
