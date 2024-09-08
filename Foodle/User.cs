@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Foodle1
+namespace User1
 {
     class User
     {
-        protected string _userID;
-        protected string _userName;
-        protected string _userEmail;
-        protected string _phoneNumber;
-        protected string _userPassword;
+        private string _userID;
+        private string _userName;
+        private string _userEmail;
+        private string _phoneNumber;
+        private string _userPassword;
+        private bool _isLoggedIn;
 
         public string UserID
         {
@@ -44,18 +45,36 @@ namespace Foodle1
             set { _userPassword = value; }
         }
 
-        public Boolean Login(string userName, string userPassword)
+        public bool IsLoggedIn
         {
-            if (userName == _userName || userPassword == _userPassword)
+            get { return _isLoggedIn; }
+        }
+
+        public bool Login(string userName, string userPassword)
+        {
+            if (userName == _userName && userPassword == _userPassword)
             {
+                _isLoggedIn = true;
                 Console.WriteLine("Login Berhasil");
                 return true;
             }
-
             else
             {
                 Console.WriteLine("Login Gagal. Silakan Coba Lagi");
                 return false;
+            }
+        }
+
+        public void Logout()
+        {
+            if (_isLoggedIn)
+            {
+                _isLoggedIn = false;
+                Console.WriteLine("Anda telah keluar.");
+            }
+            else
+            {
+                Console.WriteLine("Tidak ada pengguna yang Login.");
             }
         }
     }

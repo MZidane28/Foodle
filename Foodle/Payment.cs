@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Foodle
+namespace Payment1
 {
     class Payment
     {
@@ -30,7 +30,28 @@ namespace Foodle
         //definisikan method kelas
         public void processPayment()
         {
+            // Cek apakah metode pembayaran valid
+            if (string.IsNullOrEmpty(_paymentMethod))
+            {
+                Console.WriteLine("Metode pembayaran tidak valid.");
+                return;
+            }
 
+            // Cek apakah jumlah pembayaran valid
+            if (_paymentAmount <= 0)
+            {
+                Console.WriteLine("Jumlah pembayaran tidak valid.");
+                return;
+            }
+
+            // Proses pembayaran
+            Console.WriteLine("Pembayaran sedang diproses...");
+            Console.WriteLine($"ID Pembayaran: {_paymentID}");
+            Console.WriteLine($"Metode Pembayaran: {_paymentMethod}");
+            Console.WriteLine($"Jumlah Pembayaran: {_paymentAmount}");
+
+            // Konfirmasi pembayaran berhasil
+            Console.WriteLine("Pembayaran berhasil diproses.");
         }
     }
 }

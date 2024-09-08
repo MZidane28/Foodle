@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Foodle
+namespace Order1
 {
     class Order
     {
         private string _orderID;
-        private string _orderStatus;
         private DateTime _orderTime;
         private float _orderTotal;
         private string _restaurant;
@@ -19,11 +18,7 @@ namespace Foodle
             get { return _orderID; }
             set { _orderID = value; }
         }
-        public string OrderStatus
-        {
-            get { return _orderStatus; }
-            set { _orderStatus = value; }
-        }
+
         public DateTime OrderTime
         {
             get { return _orderTime; }
@@ -35,19 +30,50 @@ namespace Foodle
             get { return _orderTotal; }
             set { _orderTotal = value; }
         }
+
         public string Restaurant
         {
             get { return _restaurant; }
             set { _restaurant = value; }
         }
 
-        public void updateStatus (string status)
+        public string OrderStatus { get; set; } = "Tunggu respon seller dulu, ya";
+
+        public void UpdateStatusByRestaurant()
         {
-            _orderStatus = status;
+            if (OrderStatus == "Tunggu respon seller dulu, ya")
+            {
+                OrderStatus = "Bentar ya, lagi disiapin";
+                Console.WriteLine($"Order status updated by Restaurant: {OrderStatus}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid status update by Restaurant.");
+            }
         }
-        public float CalculateTotal()
+
+        public void UpdateStatusByDriver()
         {
-            return _orderTotal;
+            if (OrderStatus == "Bentar ya, lagi disiapin")
+            {
+                OrderStatus = "Lagi dianterin, sabar";
+                Console.WriteLine($"Order status updated by Driver: {OrderStatus}");
+            }
+            else if (OrderStatus == "Lagi dianterin, sabar")
+            {
+                OrderStatus = "Pesanan udah nyampe nih!";
+                Console.WriteLine($"Order status updated by Driver: {OrderStatus}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid status update by Driver.");
+            }
+        }
+
+        public float CalculateTotal(int quantity, float pricePerItem)
+        {
+            OrderTotal = quantity * pricePerItem;
+            return OrderTotal;
         }
     }
 }
