@@ -13,3 +13,6 @@ C:\Users\acer\Source\Repos\Foodle\obj\Debug\net8.0\refint\Foodle.dll
 C:\Users\acer\Source\Repos\Foodle\obj\Debug\net8.0\Foodle.pdb
 C:\Users\acer\Source\Repos\Foodle\obj\Debug\net8.0\Foodle.genruntimeconfig.cache
 C:\Users\acer\Source\Repos\Foodle\obj\Debug\net8.0\ref\Foodle.dll
+C:\Users\acer\Source\Repos\Foodle\obj\Debug\net8.0\Foodle.Foodle.Properties.Resources.resources
+C:\Users\acer\Source\Repos\Foodle\obj\Debug\net8.0\Foodle.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\Foodle\obj\Debug\net8.0\Foodle.csproj.AssemblyReference.cache
