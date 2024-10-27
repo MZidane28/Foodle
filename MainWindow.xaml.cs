@@ -14,11 +14,10 @@ namespace Foodle
         public MainWindow()
         {
             InitializeComponent();
-            EmailTextBox.Foreground = Brushes.Gray; // Set initial color for email textbox
-            PasswordPlaceholder.Visibility = Visibility.Visible; // Ensure password placeholder is visible
+            EmailTextBox.Foreground = Brushes.Gray;
+            PasswordPlaceholder.Visibility = Visibility.Visible; 
         }
 
-        // Method to open the database connection
         private void OpenConnection()
         {
             try
@@ -32,7 +31,6 @@ namespace Foodle
             }
         }
 
-        // Method to close the database connection
         private void CloseConnection()
         {
             if (conn != null && conn.State == ConnectionState.Open)
@@ -43,32 +41,25 @@ namespace Foodle
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Open the database connection
             OpenConnection();
 
-            // Fetch email and password from textboxes
             string email = EmailTextBox.Text;
             string password = PasswordBox.Password;
 
-            // SQL query to check if user exists with provided email and password
             string sql = "SELECT COUNT(1) FROM useraccount WHERE useremail = @Email AND userpassword = @Password";
 
             try
             {
                 using (var cmd = new NpgsqlCommand(sql, conn))
                 {
-                    // Add parameters to prevent SQL injection
                     cmd.Parameters.AddWithValue("Email", email);
                     cmd.Parameters.AddWithValue("Password", password);
 
-                    // Execute the query and check if user exists
                     int userExists = Convert.ToInt32(cmd.ExecuteScalar());
 
                     if (userExists > 0)
                     {
                         MessageBox.Show("Login successful!");
-                        // Navigate to the main application window or dashboard
-                        // e.g., new Dashboard().Show(); this.Close();
                     }
                     else
                     {
@@ -82,33 +73,32 @@ namespace Foodle
             }
             finally
             {
-                // Close the database connection
                 CloseConnection();
             }
         }
 
         private void RegisterHere_Click(object sender, RoutedEventArgs e)
         {
-            RegisterPage registerPage = new RegisterPage(); // Create a new instance of RegisterPage
-            registerPage.Show(); // Show the RegisterPage
-            this.Close(); // Optional: Close the MainWindow if you don't want it open
+            RegisterPage registerPage = new RegisterPage();
+            registerPage.Show();
+            this.Close();
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown(); // Closes the application
+            Application.Current.Shutdown();
         }
 
         private void EmailTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            EmailPlaceholder.Visibility = Visibility.Collapsed; // Hide placeholder when textbox is focused
+            EmailPlaceholder.Visibility = Visibility.Collapsed;
         }
 
         private void EmailTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(EmailTextBox.Text))
             {
-                EmailPlaceholder.Visibility = Visibility.Visible; // Show placeholder if textbox is empty
+                EmailPlaceholder.Visibility = Visibility.Visible;
             }
         }
 
@@ -116,7 +106,7 @@ namespace Foodle
         {
             if (PasswordBox.Password == "")
             {
-                PasswordPlaceholder.Visibility = Visibility.Collapsed; // Hide placeholder when focused
+                PasswordPlaceholder.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -124,13 +114,13 @@ namespace Foodle
         {
             if (string.IsNullOrWhiteSpace(PasswordBox.Password))
             {
-                PasswordPlaceholder.Visibility = Visibility.Visible; // Show placeholder if empty
+                PasswordPlaceholder.Visibility = Visibility.Visible;
             }
         }
 
         private void EmailTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-            // Handle text changes if necessary
+            
         }
     }
 }
