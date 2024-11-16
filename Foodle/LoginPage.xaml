@@ -1,0 +1,172 @@
+﻿<Window x:Class="Project_Foodle.Foodle.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="1080" Width="1920" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <!-- Add Poppins Font -->
+        <FontFamily x:Key="PoppinsBold">pack://application:,,,/Resources/Fonts/Poppins-Bold.ttf#Poppins Bold</FontFamily>
+        <FontFamily x:Key="PoppinsRegular">pack://application:,,,/Resources/Fonts/Poppins-Regular.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="PoppinsSemiBold">pack://application:,,,/Resources/Fonts/Poppins-SemiBold.ttf#Poppins</FontFamily>
+
+        <!-- Style for the drop shadow effect -->
+        <Style x:Key="DropShadowStyle" TargetType="Border">
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="10" Opacity="0.5" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <!-- Main Layout with Padding -->
+    <Grid Background="#1C3132">
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="876" Width="1728">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="2*" />
+                <!-- Adjusted the column width -->
+            </Grid.ColumnDefinitions>
+
+            <!-- Left Side Background Color -->
+            <Border Grid.Column="0" Background="#0A3D40" CornerRadius="30" Grid.ColumnSpan="2" Style="{StaticResource DropShadowStyle}">
+                <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80,74,0,0" Width="881" Height="733">
+                    <TextBlock FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="40" FontWeight="Bold" TextAlignment="Left">
+            <Run Text="Welcome to" />
+            <Run Text="Foodle" FontFamily="{StaticResource PoppinsBold}" Foreground="#04944F" />
+                    </TextBlock>
+
+                    <TextBlock Text="Tasty Meals, Big Savings" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="55" FontWeight="Bold" Margin="0,200,0,0"/>
+                    <TextBlock Text="All in One Application" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="55" FontWeight="Bold" Margin="0,0,0,40"/>
+
+                    <TextBlock Text="We’ve created the smartest way to trade your surplus food" FontFamily="{StaticResource PoppinsSemiBold}" Foreground="#A5A5A5" FontSize="20" FontWeight="SemiBold" Margin="0,-25,0,0"/>
+                    <TextBlock Text="by creating the smartest way to sell, buy, or deliver all in one application." FontFamily="{StaticResource PoppinsSemiBold}" Foreground="#A5A5A5" FontSize="20" FontWeight="SemiBold" Margin="0,0,0,40"/>
+
+                    <TextBlock Text="Trade. Enjoy. Save. Start From Rp10.000" FontFamily="{StaticResource PoppinsBold}" Foreground="#04944F" FontSize="22" FontWeight="Bold" Margin="0,100,0,0"/>
+                </StackPanel>
+            </Border>
+
+
+
+            <!-- Right Side Background Color -->
+            <Border Grid.Column="1" Background="#04944F" CornerRadius="30" Padding="80" Margin="0,0,0,0">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" Height="768">
+                    <TextBlock Text="Login to Your Account and" 
+                               FontFamily="{StaticResource PoppinsRegular}" 
+                               Foreground="White" FontSize="24"
+                               Margin="0,80,0,0"
+                               TextAlignment="Left"/>
+                    <TextBlock Text="Discover Amazing Food Deals!" 
+                               FontFamily="{StaticResource PoppinsBold}" 
+                               Foreground="White" FontSize="24" 
+                               Margin="0,0,0,40" 
+                               TextAlignment="Left"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Text="Email / Username" 
+                               FontFamily="{StaticResource PoppinsRegular}" 
+                               Foreground="White" FontSize="20" />
+
+                    <Border CornerRadius="15" Background="White" Margin="0,5,0,30">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="13*"/>
+                                <ColumnDefinition Width="487*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="6*"/>
+                                <RowDefinition Height="49*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBox x:Name="EmailTextBox" 
+                                 Width="477" 
+                                 Height="55" 
+                                 Padding="10" 
+                                 FontSize="20" 
+                                 Foreground="Transparent" 
+                                 BorderBrush="Transparent" 
+                                 GotFocus="EmailTextBox_GotFocus" 
+                                 LostFocus="EmailTextBox_LostFocus" Margin="12,0,11,0" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+
+                            <TextBlock x:Name="EmailPlaceholder" 
+                                   Text="Enter your Email or Username" 
+                                   FontFamily="{StaticResource PoppinsRegular}"
+                                   FontSize="20"
+                                   Foreground="#C9C9C9" 
+                                   VerticalAlignment="Top" 
+                                   Margin="11,6,0,0" 
+                                   IsHitTestVisible="False" Grid.Row="1" Grid.Column="1"/>
+
+                        </Grid>
+                    </Border>
+
+                    <TextBlock Text="Password" 
+               FontFamily="{StaticResource PoppinsRegular}" 
+               Foreground="White" FontSize="20" />
+                    <Border CornerRadius="15" Background="White" Margin="0,5,0,30">
+                        <Grid>
+                            <PasswordBox x:Name="PasswordBox" 
+                                 Height="55" 
+                                 Padding="10" 
+                                 FontSize="18" 
+                                 Foreground="Black" 
+                                 BorderBrush="Transparent" 
+                                 Password="" 
+                                 GotFocus="PasswordBox_GotFocus" 
+                                 LostFocus="PasswordBox_LostFocus" Margin="10,0,16,0"/>
+                            <TextBlock x:Name="PasswordPlaceholder" 
+                               Text="Enter your Password" 
+                               FontFamily="{StaticResource PoppinsRegular}"
+                               FontSize="20"
+                               Foreground="#C9C9C9" 
+                               VerticalAlignment="Center" 
+                               Margin="24,0,0,0" 
+                               IsHitTestVisible="False"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- Add Border behind the TextBlock for LOGIN -->
+                    <Border CornerRadius="15" Background="#0A3D40" Margin="0,10,0,30" Padding="10" Height="46">
+                        <TextBlock Text="LOGIN" 
+                                   Width="472" 
+                                   Height="30" 
+                                   Foreground="White" 
+                                   FontSize="22" 
+                                   FontWeight="Bold"
+                                   FontFamily="{StaticResource PoppinsBold}" 
+                                   Cursor="Hand" 
+                                   TextAlignment="Center" 
+                                   MouseDown="LoginButton_Click"/>
+                    </Border>
+
+                    <TextBlock Text="By signing in, you agree to our Terms of Service" 
+                               FontFamily="{StaticResource PoppinsRegular}" 
+                               Foreground="White" 
+                               FontSize="14" 
+                               TextWrapping="Wrap" 
+                               TextAlignment="Center" 
+                               Margin="0,-20,0,0"/>
+
+                    <StackPanel Orientation="Horizontal" 
+                                HorizontalAlignment="Center" 
+                                Margin="0,100,0,0">
+                        <TextBlock Text="Don't have an account? " 
+                                   FontFamily="{StaticResource PoppinsRegular}" 
+                                   Foreground="White" FontSize="18" />
+                        <TextBlock Text="Register here." 
+                                   FontFamily="{StaticResource PoppinsBold}" 
+                                   Foreground="White" 
+                                   FontSize="18"
+                                   Cursor="Hand" 
+                                   FontWeight="Bold"
+                                   MouseDown="RegisterHere_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>
