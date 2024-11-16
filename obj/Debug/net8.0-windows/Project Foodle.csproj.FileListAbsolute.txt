@@ -1,0 +1,56 @@
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Project Foodle.exe
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Project Foodle.deps.json
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Project Foodle.runtimeconfig.json
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Project Foodle.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Project Foodle.pdb
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.csproj.AssemblyReference.cache
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Customer\AccountProfile.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Customer\DashboardPage.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Customer\OrdersPage.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\LoginPage.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\RegisterPage1.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\RegisterPage2.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\ManageOrder.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\SellerCenter.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\SellerProfile.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Customer\AccountProfile.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Customer\DashboardPage.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Customer\OrdersPage.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\LoginPage.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\MessagesPage.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\RegisterPage1.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\RegisterPage2.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\SettingsPage.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\ManageOrder.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\SellerCenter.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\SellerProfile.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle_MarkupCompile.cache
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle_MarkupCompile.lref
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\App.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\MessagesPage.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Foodle\SettingsPage.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.g.resources
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.AssemblyInfoInputs.cache
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.AssemblyInfo.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.csproj.CoreCompileInputs.cache
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project .AFCA80AC.Up2Date
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\refint\Project Foodle.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.pdb
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Project Foodle.genruntimeconfig.cache
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\ref\Project Foodle.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\UploadItem.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\KOMPUTER\source\repos\Project Foodle\obj\Debug\net8.0-windows\Seller\UploadItem.baml
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\FireSharp.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\FireSharp.Serialization.JsonNet.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\RestSharp.dll
+C:\Users\KOMPUTER\source\repos\Project Foodle\bin\Debug\net8.0-windows\CloudinaryDotNet.dll
