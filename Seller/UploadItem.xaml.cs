@@ -35,8 +35,6 @@ namespace Project_Foodle.Seller
     public partial class UploadItem : Page
     {
         private NpgsqlConnection conn;
-        //tambah sini
-
         private readonly CloudinaryService cloudinaryService;
 
         public UploadItem()
@@ -59,8 +57,7 @@ namespace Project_Foodle.Seller
             Button clickedButton = sender as Button;
             if (clickedButton != null)
             {
-                clickedButton.Style = (Style)FindResource("ActiveButtonStyle");
-                SetHighlightPosition(clickedButton);
+                SetButtonStyle(clickedButton);
 
                 switch (clickedButton.Content.ToString())
                 {
@@ -95,6 +92,13 @@ namespace Project_Foodle.Seller
             SellerProfileButton.Style = (Style)FindResource("InactiveButtonStyle");
         }
 
+        private void SetButtonStyle(Button clickedButton)
+        {
+            ResetButtonStyles();
+            clickedButton.Style = (Style)FindResource("ActiveButtonStyle");
+            SetHighlightPosition(clickedButton);
+        }
+
         private void SetHighlightPosition(Button button)
         {
             if (button != null)
@@ -121,6 +125,11 @@ namespace Project_Foodle.Seller
                 BitmapImage bitmap = new BitmapImage(new Uri(openFileDialog.FileName));
                 ItemImagePreview.Source = bitmap;
             }
+            else
+            {
+                // Handle cancelation if necessary, e.g., reset image preview
+                ItemImagePreview.Source = null;
+            }
         }
 
         private async void SubmitButton_Click(object sender, RoutedEventArgs e)
@@ -137,8 +146,13 @@ namespace Project_Foodle.Seller
                 return;
             }
 
-            string username = Application.Current.Properties["LoggedUser"] as string;
+            if (!int.TryParse(itemPrice, out int price) || !int.TryParse(itemStock, out int stock))
+            {
+                MessageBox.Show("Please enter valid numbers for price and stock.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
+            string username = Application.Current.Properties["LoggedUser"] as string;
             if (string.IsNullOrEmpty(username))
             {
                 MessageBox.Show("User not logged in. Please log in first.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -153,17 +167,20 @@ namespace Project_Foodle.Seller
                     string imageFilePath = new Uri(itemImagePath).LocalPath;
                     string fileName = System.IO.Path.GetFileName(imageFilePath);
 
-                    // Validasi file path sebelum mengunggah
                     if (!File.Exists(imageFilePath))
                     {
                         MessageBox.Show($"File not found: {imageFilePath}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         return;
                     }
 
-                    cloudinaryImageUrl = cloudinaryService.UploadImage(imageFilePath);
+                    cloudinaryImageUrl = await cloudinaryService.UploadImageAsync(imageFilePath);
                 }
 
-                conn.Open();
+                if (conn.State != ConnectionState.Open)
+                {
+                    conn.Open();
+                }
+
                 string query = "INSERT INTO products (name, price, stock, category, image_path, username) VALUES (@name, @price, @stock, @category, @image_path, @username)";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {

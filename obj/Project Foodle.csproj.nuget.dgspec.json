@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KOMPUTER\\source\\repos\\Project Foodle\\Project Foodle.csproj": {}
+    "C:\\Users\\rendy\\Downloads\\Foodle\\fooooo\\Project Foodle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KOMPUTER\\source\\repos\\Project Foodle\\Project Foodle.csproj": {
+    "C:\\Users\\rendy\\Downloads\\Foodle\\fooooo\\Project Foodle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KOMPUTER\\source\\repos\\Project Foodle\\Project Foodle.csproj",
+        "projectUniqueName": "C:\\Users\\rendy\\Downloads\\Foodle\\fooooo\\Project Foodle.csproj",
         "projectName": "Project Foodle",
-        "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\Project Foodle\\Project Foodle.csproj",
-        "packagesPath": "C:\\Users\\KOMPUTER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KOMPUTER\\source\\repos\\Project Foodle\\obj\\",
+        "projectPath": "C:\\Users\\rendy\\Downloads\\Foodle\\fooooo\\Project Foodle.csproj",
+        "packagesPath": "C:\\Users\\rendy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rendy\\Downloads\\Foodle\\fooooo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KOMPUTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rendy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,7 +12,7 @@
         <FontFamily x:Key="PoppinsRegular">pack://application:,,,/Resources/Fonts/Poppins-Regular.ttf#Poppins Regular</FontFamily>
         <FontFamily x:Key="PoppinsSemiBold">pack://application:,,,/Resources/Fonts/Poppins-SemiBold.ttf#Poppins SemiBold</FontFamily>
         <FontFamily x:Key="PoppinsMedium">pack://application:,,,/Resources/Fonts/Poppins-Medium.ttf#Poppins Medium</FontFamily>
-
+        
         <!-- Style for Navigation Buttons -->
         <Style x:Key="NavButtonStyle" TargetType="Button">
             <Setter Property="Foreground" Value="White"/>
@@ -32,10 +32,7 @@
         </Style>
 
         <!-- Style for Inactive Buttons -->
-        <Style x:Key="InactiveButtonStyle" TargetType="Button" BasedOn="{StaticResource NavButtonStyle}">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="White"/>
-        </Style>
+        <Style x:Key="InactiveButtonStyle" TargetType="Button" BasedOn="{StaticResource NavButtonStyle}"/>
     </Page.Resources>
 
     <Grid Background="#0A3D40">
@@ -46,8 +43,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock x:Name="ActiveHighlight" Background="Transparent" Height="60" Width="398" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" />
-
+                
                 <StackPanel Grid.Row="1">
                     <!-- App Title -->
                     <TextBlock Text="Foodle" 
@@ -74,18 +70,31 @@
             </Grid>
         </Border>
 
-        <!-- Main Content Area with White Background and Rounded Corners -->
+        <!-- Main Content Area with Products -->
         <Grid Margin="403,10,10,10">
-            <!-- Add Border for White Background with Rounded Corners for entire content -->
-            <Border Background="White" CornerRadius="20" Padding="20">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="71*"/>
-                        <RowDefinition Height="194*"/>
-                    </Grid.RowDefinitions>
-                </Grid>
-            </Border>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <WrapPanel x:Name="ProductListPanel" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </ScrollViewer>
         </Grid>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+
+        <!-- Cart Popup -->
+        <Popup x:Name="CartPopup" Width="400" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Border Background="White" BorderBrush="Black" BorderThickness="1" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Your Cart" FontSize="24" FontFamily="{StaticResource PoppinsBold}" Margin="0,0,0,10"/>
+                    <ListView x:Name="CartListView" BorderBrush="Transparent">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Product" DisplayMemberBinding="{Binding ProductName}" />
+                                <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" />
+                                <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Price}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Button Content="Checkout" Style="{StaticResource CartButtonStyle}" Click="CheckoutButton_Click"/>
+                    <Button Content="Close" Style="{StaticResource CartButtonStyle}" Background="#D32F2F" Click="CloseCartButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Popup>
     </Grid>
 </Page>

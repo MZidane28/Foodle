@@ -1,73 +1,138 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Controls;
-using Project_Foodle.Foodle;
+using Project_Foodle.Models; 
 
 namespace Project_Foodle.Customer
 {
     public partial class DashboardPage : Page
     {
+        // Observable collection of items in the cart
+        public ObservableCollection<CartItem> CartItems { get; set; }
+
+        // List to hold products that will be displayed on the Dashboard
+        public List<Product> Products { get; set; }
+
         public DashboardPage()
         {
             InitializeComponent();
-            DashboardButton.Style = (Style)FindResource("ActiveButtonStyle");
-            SetHighlightPosition(DashboardButton);
+            CartItems = new ObservableCollection<CartItem>();
+            CartListView.ItemsSource = CartItems;
+
+            // Simulate fetching product data (replace this with real data from a database or API)
+            Products = FetchProductsFromDatabase();
+
+            LoadProductList();
         }
 
-        private void NavigateButton_Click(object sender, RoutedEventArgs e)
+        // Cart item class to store product details
+        public class CartItem
         {
-            ResetButtonStyles();
+            public string ProductName { get; set; }
+            public int Quantity { get; set; }
+            public decimal Price { get; set; }
+        }
 
-            Button clickedButton = sender as Button;
-            if (clickedButton != null)
+        // Load the products from the database or API
+        private List<Product> FetchProductsFromDatabase()
+        {
+            // Simulating product data from a database or API
+            return new List<Product>
             {
-                clickedButton.Style = (Style)FindResource("ActiveButtonStyle");
-                SetHighlightPosition(clickedButton);
+                new Product { ProductId = 1, Name = "Product 1", Price = 25.00m, Description = "Delicious Product 1", ImageUrl = "Images/product1.jpg" },
+                new Product { ProductId = 2, Name = "Product 2", Price = 30.00m, Description = "Delicious Product 2", ImageUrl = "Images/product2.jpg" },
+                new Product { ProductId = 3, Name = "Product 3", Price = 15.00m, Description = "Delicious Product 3", ImageUrl = "Images/product3.jpg" }
+            };
+        }
 
-                switch (clickedButton.Content.ToString())
+        // Load the products into the product list on the page
+        private void LoadProductList()
+        {
+            foreach (var product in Products)
+            {
+                Button productButton = new Button
                 {
-                    case "Dashboard":
-                        NavigationService.Navigate(new DashboardPage());
-                        break;
-                    case "Orders":
-                        NavigationService.Navigate(new OrdersPage());
-                        break;
-                    case "Messages":
-                        NavigationService.Navigate(new MessagesPage());
-                        break;
-                    case "Settings":
-                        NavigationService.Navigate(new SettingsPage());
-                        break;
-                    case "Account Profile":
-                        NavigationService.Navigate(new AccountProfile());
-                        break;
-                    default:
-                        break;
-                }
-                NavigationService.RemoveBackEntry(); // Menghapus entry navigasi sebelumnya
+                    Content = new StackPanel
+                    {
+                        Orientation = Orientation.Vertical,
+                        HorizontalAlignment = HorizontalAlignment.Center,
+                        Children =
+                        {
+                            new Image { Source = new BitmapImage(new Uri(product.ImageUrl, UriKind.RelativeOrAbsolute)), Width = 100, Height = 100 },
+                            new TextBlock { Text = product.Name, FontWeight = FontWeights.Bold, HorizontalAlignment = HorizontalAlignment.Center },
+                            new TextBlock { Text = $"${product.Price}", HorizontalAlignment = HorizontalAlignment.Center }
+                        }
+                    },
+                    Style = (Style)FindResource("ProductCardStyle"),
+                    Tag = product // Store product information in the Tag property
+                };
+
+                productButton.Click += ProductButton_Click;
+                ProductListPanel.Children.Add(productButton);
             }
         }
 
-        private void ResetButtonStyles()
+        // Add the product to the cart when a product button is clicked
+        private void ProductButton_Click(object sender, RoutedEventArgs e)
         {
-            DashboardButton.Style = (Style)FindResource("InactiveButtonStyle");
-            OrdersButton.Style = (Style)FindResource("InactiveButtonStyle");
-            MessagesButton.Style = (Style)FindResource("InactiveButtonStyle");
-            SettingsButton.Style = (Style)FindResource("InactiveButtonStyle");
-            AccountProfileButton.Style = (Style)FindResource("InactiveButtonStyle");
+            var product = (Product)((Button)sender).Tag; // Retrieve product from the button's Tag
+            AddToCart(product);
         }
 
-        private void SetHighlightPosition(Button button)
+        // Add product to cart
+        private void AddToCart(Product product)
         {
-            if (button != null)
+            var existingItem = CartItems.FirstOrDefault(item => item.ProductName == product.Name);
+            if (existingItem != null)
             {
-                ActiveHighlight.Visibility = Visibility.Visible;
-                double buttonPositionY = button.TranslatePoint(new Point(0, 0), this).Y;
-                Canvas.SetTop(ActiveHighlight, buttonPositionY);
+                existingItem.Quantity++;
             }
             else
             {
-                ActiveHighlight.Visibility = Visibility.Collapsed;
+                CartItems.Add(new CartItem { ProductName = product.Name, Quantity = 1, Price = product.Price });
             }
+        }
+
+        // Handle opening the cart popup
+        private void OpenCartButton_Click(object sender, RoutedEventArgs e)
+        {
+            CartPopup.IsOpen = true;
+        }
+
+        // Checkout the cart (handle order processing)
+        private void CheckoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (CartItems.Count == 0)
+            {
+                MessageBox.Show("Your cart is empty!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // Process checkout (e.g., go to payment page or show confirmation)
+            ProcessCheckout();
+
+            // Close the cart popup after checkout
+            CartPopup.IsOpen = false;
+        }
+
+        // Process the checkout
+        private void ProcessCheckout()
+        {
+            decimal totalAmount = 0;
+
+            // Calculate the total amount of the cart
+            foreach (var item in CartItems)
+            {
+                totalAmount += item.Quantity * item.Price;
+            }
+
+            // Example: Proceed to payment or order confirmation
+            MessageBox.Show($"Checkout successful! Total amount: {totalAmount:C}", "Checkout", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            // Clear the cart after successful checkout
+            CartItems.Clear();
         }
     }
 }

@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Customer",
-    "\\Foodle",
-    "\\Seller",
-    "\\Services"
+    ""
   ],
-  "SelectedNode": "\\Foodle\\LoginPage.xaml.cs",
+  "SelectedNode": "\\Project Foodle.sln",
   "PreviewInSolutionExplorer": false
 }

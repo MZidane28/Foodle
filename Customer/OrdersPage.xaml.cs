@@ -1,6 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
-using Project_Foodle.Foodle;
 
 namespace Project_Foodle.Customer
 {
@@ -9,65 +11,60 @@ namespace Project_Foodle.Customer
         public OrdersPage()
         {
             InitializeComponent();
-            OrdersButton.Style = (Style)FindResource("ActiveButtonStyle");
-            SetHighlightPosition(OrdersButton);
+            LoadOrders();
         }
 
-        private void NavigateButton_Click(object sender, RoutedEventArgs e)
+        // Example Order class
+        public class Order
         {
-            ResetButtonStyles();
+            public string ProductName { get; set; }
+            public int Quantity { get; set; }
+            public decimal Price { get; set; }
+            public DateTime OrderDate { get; set; }
+        }
 
-            Button clickedButton = sender as Button;
-            if (clickedButton != null)
+        // Sample list of orders
+        private List<Order> Orders { get; set; }
+
+        // Load orders for demonstration
+        private void LoadOrders()
+        {
+            Orders = new List<Order>
             {
-                clickedButton.Style = (Style)FindResource("ActiveButtonStyle");
-                SetHighlightPosition(clickedButton);
+                new Order { ProductName = "Product A", Quantity = 2, Price = 100, OrderDate = DateTime.Now.AddDays(-1) },
+                new Order { ProductName = "Product B", Quantity = 1, Price = 50, OrderDate = DateTime.Now.AddDays(-3) },
+                new Order { ProductName = "Product C", Quantity = 5, Price = 200, OrderDate = DateTime.Now.AddDays(-10) }
+            };
 
-                switch (clickedButton.Content.ToString())
+            // Set the orders to the ListView
+            OrdersListView.ItemsSource = Orders;
+        }
+
+        // Handle sort selection changes
+        private void SortComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SortComboBox.SelectedItem is ComboBoxItem selectedItem)
+            {
+                if (selectedItem.Content.ToString() == "Sort by Date (Newest)")
                 {
-                    case "Dashboard":
-                        NavigationService.Navigate(new DashboardPage());
-                        break;
-                    case "Orders":
-                        NavigationService.Navigate(new OrdersPage());
-                        break;
-                    case "Messages":
-                        NavigationService.Navigate(new MessagesPage());
-                        break;
-                    case "Settings":
-                        NavigationService.Navigate(new SettingsPage());
-                        break;
-                    case "Account Profile":
-                        NavigationService.Navigate(new AccountProfile());
-                        break;
-                    default:
-                        break;
+                    OrdersListView.ItemsSource = Orders.OrderByDescending(o => o.OrderDate).ToList();
                 }
-                NavigationService.RemoveBackEntry();
+                else
+                {
+                    OrdersListView.ItemsSource = Orders.OrderBy(o => o.OrderDate).ToList();
+                }
             }
         }
 
-        private void ResetButtonStyles()
+        // Handle date filter button click
+        private void FilterByDateButton_Click(object sender, RoutedEventArgs e)
         {
-            DashboardButton.Style = (Style)FindResource("InactiveButtonStyle");
-            OrdersButton.Style = (Style)FindResource("InactiveButtonStyle");
-            MessagesButton.Style = (Style)FindResource("InactiveButtonStyle");
-            SettingsButton.Style = (Style)FindResource("InactiveButtonStyle");
-            AccountProfileButton.Style = (Style)FindResource("InactiveButtonStyle");
-        }
+            // Open a date picker dialog or use hardcoded date range for simplicity
+            DateTime startDate = DateTime.Now.AddDays(-7); // For example, filter orders from the past 7 days
+            DateTime endDate = DateTime.Now;
 
-        private void SetHighlightPosition(Button button)
-        {
-            if (button != null)
-            {
-                ActiveHighlight.Visibility = Visibility.Visible;
-                double buttonPositionY = button.TranslatePoint(new Point(0, 0), this).Y;
-                Canvas.SetTop(ActiveHighlight, buttonPositionY);
-            }
-            else
-            {
-                ActiveHighlight.Visibility = Visibility.Collapsed;
-            }
+            var filteredOrders = Orders.Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate).ToList();
+            OrdersListView.ItemsSource = filteredOrders;
         }
     }
 }
