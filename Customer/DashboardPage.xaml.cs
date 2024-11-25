@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
@@ -32,6 +32,38 @@ namespace Project_Foodle.Customer
 
                 string destinationPage = clickedButton.Content.ToString();
                 HandleNavigationRequest(destinationPage);
+            }
+        }
+
+        private void HandleNavigationRequest(string destinationPage)
+        {
+            Page targetPage = null;
+
+            switch (destinationPage)
+            {
+                case "Dashboard":
+                    targetPage = new DashboardPage();
+                    break;
+                case "Orders":
+                    targetPage = new OrdersPage();
+                    break;
+                case "Messages":
+                    targetPage = new MessagesPage();
+                    break;
+                case "Settings":
+                    targetPage = new SettingsPage();
+                    break;
+                case "Account Profile":
+                    targetPage = new AccountProfile();
+                    break;
+                default:
+                    MessageBox.Show("Halaman tidak ditemukan!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+            }
+
+            if (targetPage != null && NavigationService.Content.GetType() != targetPage.GetType())
+            {
+                NavigationService.Navigate(targetPage);
             }
         }
 
@@ -110,6 +142,42 @@ namespace Project_Foodle.Customer
             }
         }
 
+        private string LoadUsername()
+        {
+            try
+            {
+                using (var connection = new NpgsqlConnection(_connectionString))
+                {
+                    connection.Open();
+
+                    string userEmailOrUsername = App.LoggedInEmailorUsername;
+                    string query = "SELECT username FROM useraccount WHERE useremail = @Email OR username = @Username";
+
+                    using (var command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", userEmailOrUsername);
+                        command.Parameters.AddWithValue("@Username", userEmailOrUsername);
+
+                        var result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            return result.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found. Please log in again.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return string.Empty;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading username: {ex.Message}", "Database Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return string.Empty;
+            }
+        }
+
         private void LoadAddressData()
         {
             try
@@ -117,11 +185,14 @@ namespace Project_Foodle.Customer
                 using (var connection = new NpgsqlConnection(_connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT address, alamat_pengiriman FROM useraccount WHERE id = @UserId";
+
+                    string userEmailOrUsername = App.LoggedInEmailorUsername;
+                    string query = "SELECT address, alamat_pengiriman FROM useraccount WHERE useremail = @Email OR username = @Username";
+
                     using (var cmd = new NpgsqlCommand(query, connection))
                     {
-                        int userId = 1; // Replace with actual logged-in user ID
-                        cmd.Parameters.AddWithValue("@UserId", userId);
+                        cmd.Parameters.AddWithValue("@Email", userEmailOrUsername);
+                        cmd.Parameters.AddWithValue("@Username", userEmailOrUsername);
 
                         using (var reader = cmd.ExecuteReader())
                         {
@@ -132,6 +203,10 @@ namespace Project_Foodle.Customer
 
                                 string shippingAddress = reader["alamat_pengiriman"]?.ToString();
                                 ShippingAddressTextBox.Text = string.IsNullOrWhiteSpace(shippingAddress) ? defaultAddress : shippingAddress;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Address data not found. Please check your account.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
                             }
                         }
                     }
@@ -164,13 +239,14 @@ namespace Project_Foodle.Customer
                 {
                     connection.Open();
                     string query = string.IsNullOrWhiteSpace(shippingAddress)
-                        ? "UPDATE useraccount SET alamat_pengiriman = NULL WHERE id = @UserId"
-                        : "UPDATE useraccount SET alamat_pengiriman = @ShippingAddress WHERE id = @UserId";
+                        ? "UPDATE useraccount SET alamat_pengiriman = NULL WHERE useremail = @Email OR username = @Username"
+                        : "UPDATE useraccount SET alamat_pengiriman = @ShippingAddress WHERE useremail = @Email OR username = @Username";
 
                     using (var cmd = new NpgsqlCommand(query, connection))
                     {
-                        int userId = 1; // Replace with actual logged-in user ID
-                        cmd.Parameters.AddWithValue("@UserId", userId);
+                        string userEmailOrUsername = App.LoggedInEmailorUsername;
+                        cmd.Parameters.AddWithValue("@Email", userEmailOrUsername);
+                        cmd.Parameters.AddWithValue("@Username", userEmailOrUsername);
 
                         if (!string.IsNullOrWhiteSpace(shippingAddress))
                             cmd.Parameters.AddWithValue("@ShippingAddress", shippingAddress);
@@ -251,35 +327,6 @@ namespace Project_Foodle.Customer
                 {
                     MessageBox.Show($"Error during purchase: {ex.Message}", "Purchase Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-            }
-        }
-
-        public void HandleNavigationRequest(string destinationPage)
-        {
-            Page targetPage = null;
-
-            switch (destinationPage)
-            {
-                case "Dashboard":
-                    targetPage = new DashboardPage();
-                    break;
-                case "Orders":
-                    targetPage = new OrdersPage();
-                    break;
-                case "Messages":
-                    targetPage = new MessagesPage();
-                    break;
-                case "Settings":
-                    targetPage = new SettingsPage();
-                    break;
-                case "Account Profile":
-                    targetPage = new AccountProfile();
-                    break;
-            }
-
-            if (targetPage != null && NavigationService.Content.GetType() != targetPage.GetType())
-            {
-                NavigationService.Navigate(targetPage);
             }
         }
     }
