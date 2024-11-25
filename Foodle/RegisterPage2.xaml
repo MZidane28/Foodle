@@ -1,0 +1,183 @@
+﻿<Window x:Class="Project_Foodle.Foodle.RegisterPage2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Register" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <FontFamily x:Key="PoppinsBold">pack://application:,,,/Resources/Fonts/Poppins-Bold.ttf#Poppins Bold</FontFamily>
+        <FontFamily x:Key="PoppinsRegular">pack://application:,,,/Resources/Fonts/Poppins-Regular.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="PoppinsSemiBold">pack://application:,,,/Resources/Fonts/Poppins-SemiBold.ttf#Poppins SemiBold</FontFamily>
+
+        <!-- Style for the drop shadow effect -->
+        <Style x:Key="DropShadowStyle" TargetType="Border">
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="10" Opacity="0.5" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for rounded TextBox -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="0,5,0,20"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="15">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Background="#1C3132">
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="876" Width="1728">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Left Side Background Color (Welcome Section) -->
+            <Border Grid.Column="0" Background="#0A3D40" CornerRadius="30" Padding="80" Grid.ColumnSpan="2">
+                <StackPanel>
+                    <TextBlock FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="40" FontWeight="Bold" TextAlignment="Left">
+                        <Run Text="Welcome to " />
+                        <Run Text="Foodle" FontFamily="{StaticResource PoppinsBold}" Foreground="#04944F" />
+                    </TextBlock>
+
+                    <TextBlock Text="Delicious Food," FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="40" FontWeight="Bold" Margin="0,200,0,0"/>
+                    <TextBlock Text="Reduce Waste," FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="40" FontWeight="Bold" Margin="0,0,0,40"/>
+                    <TextBlock Text="Around The World." FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="40" FontWeight="Bold" Margin="0,-40,0,40"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Right Side Background Color (Registration Section) -->
+            <Border Background="#04944F" CornerRadius="30" Grid.ColumnSpan="2" Margin="568,0,0,0">
+                <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="1160">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,80,0,0">
+                        <TextBlock FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="32" FontWeight="Bold" Margin="0,0,490,0">
+                            <Run Text="Register Your Account" />
+                        </TextBlock>
+
+                        <!-- Back Button -->
+                        <Border Background="#0A3D40" CornerRadius="50" Width="50" Height="50" Margin="0,0,10,0" Cursor="Hand" MouseDown="BackButton_Click">
+                            <Path Data="M -4,10 L -4,40 L -25,25 Z" 
+      Fill="White" 
+      VerticalAlignment="Top" 
+      HorizontalAlignment="Left" RenderTransformOrigin="0.01,0.412" Margin="35,0,0,0" />
+                        </Border>
+
+                        <!-- Forward Button -->
+                        <Border x:Name="ForwardButton" Background="#0A3D40" CornerRadius="50" Width="50" Height="50" IsHitTestVisible="False">
+                            <Path Data="M 7,10 L 7,40 L 25,25 Z" 
+                                  Fill="White" 
+                                  VerticalAlignment="Top" 
+                                  HorizontalAlignment="Center" RenderTransformOrigin="0.01,0.412" />
+                        </Border>
+                    </StackPanel>
+
+                    <StackPanel Width="967" Margin="0, 30,0,40">
+                        <TextBlock Text="Phone Number" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="20" FontWeight="Bold" />
+                        <Grid>
+                            <TextBox x:Name="RegisterPhoneNumber" Height="55" 
+                                     GotFocus="PhoneNumber_GotFocus" LostFocus="PhoneNumber_LostFocus"/>
+                            <TextBlock Text="Enter your Phone Number" 
+                                       Foreground="#C9C9C9" 
+                                       FontSize="20" 
+                                       VerticalAlignment="Top" 
+                                       Margin="24,19,0,0"
+                                       IsHitTestVisible="False"
+                                       Visibility="Visible" 
+                                       Name="PhoneNumberPlaceholder"/>
+                        </Grid>
+
+                        <TextBlock Text="Country" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                        <Grid>
+                            <TextBox x:Name="RegisterCountry" Height="55" 
+                                     GotFocus="Country_GotFocus" LostFocus="Country_LostFocus"/>
+                            <TextBlock Text="Enter your Country" 
+                                       Foreground="#C9C9C9" 
+                                       FontSize="20" 
+                                       VerticalAlignment="Top" 
+                                       Margin="24,19,-6,0"
+                                       IsHitTestVisible="False"
+                                       Visibility="Visible" 
+                                       Name="CountryPlaceholder"/>
+                        </Grid>
+
+                        <TextBlock Text="Address" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                        <Grid>
+                            <TextBox x:Name="RegisterAddress" Height="55" 
+                                     GotFocus="Address_GotFocus" LostFocus="Address_LostFocus"/>
+                            <TextBlock Text="Enter your Address" 
+                                       Foreground="#C9C9C9" 
+                                       FontSize="20" 
+                                       VerticalAlignment="Top" 
+                                       Margin="24,19,0,0"
+                                       IsHitTestVisible="False"
+                                       Visibility="Visible" 
+                                       Name="AddressPlaceholder"/>
+                        </Grid>
+
+                        <TextBlock Text="Gender" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                        <Grid>
+                            <TextBox x:Name="RegisterGender" Height="55" 
+                                          GotFocus="Gender_GotFocus" LostFocus="Gender_LostFocus"/>
+                            <TextBlock Text="Select your Gender" 
+                                       Foreground="#C9C9C9" 
+                                       FontSize="20" 
+                                       VerticalAlignment="Top" 
+                                       Margin="24,19,0,0"
+                                       IsHitTestVisible="False"
+                                       Visibility="Visible" 
+                                       Name="GenderPlaceholder"/>
+                        </Grid>
+
+                        <TextBlock Text="Date of Birth" FontFamily="{StaticResource PoppinsBold}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                        <Grid>
+                            <TextBox x:Name="RegisterDOB" Height="55" 
+                                          GotFocus="DOB_GotFocus" LostFocus="DOB_LostFocus"/>
+                            <TextBlock Text="Select your Date of Birth" 
+                                       Foreground="#C9C9C9" 
+                                       FontSize="20" 
+                                       VerticalAlignment="Top" 
+                                       Margin="24,19,0,0"
+                                       IsHitTestVisible="False"
+                                       Visibility="Visible" 
+                                       Name="DOBPlaceholder"/>
+                        </Grid>
+
+                        <TextBlock Text="By signing up, you agree to our Terms of Service" FontFamily="{StaticResource PoppinsRegular}" Foreground="White" FontSize="14" FontWeight="Regular" Margin="0,50,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- Add Border behind the TextBlock for REGISTER -->
+                    <Border CornerRadius="15" Background="#0A3D40" Margin="0,-75,-650,30" Padding="10" Height="46" Width="310">
+                        <TextBlock Text="REGISTER NOW" 
+                                   Foreground="White" 
+                                   FontSize="22" 
+                                   FontWeight="Bold"
+                                   FontFamily="{StaticResource PoppinsBold}" 
+                                   Cursor="Hand" 
+                                   TextAlignment="Center" 
+                                   MouseDown="RegisterButton_Click" Margin="0,0,0,-10"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,78 @@
+﻿<Page x:Class="Project_Foodle.Customer.BuyProduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="BuyProduct"
+      Height="1080"
+      Width="1080"
+      Background="White">
+
+    <Page.Resources>
+        <!-- Poppins Font Family -->
+        <FontFamily x:Key="PoppinsBold">pack://application:,,,/Resources/Fonts/Poppins-Bold.ttf#Poppins Bold</FontFamily>
+        <FontFamily x:Key="PoppinsRegular">pack://application:,,,/Resources/Fonts/Poppins-Regular.ttf#Poppins Regular</FontFamily>
+        <FontFamily x:Key="PoppinsSemiBold">pack://application:,,,/Resources/Fonts/Poppins-SemiBold.ttf#Poppins SemiBold</FontFamily>
+        <FontFamily x:Key="PoppinsMedium">pack://application:,,,/Resources/Fonts/Poppins-Medium.ttf#Poppins Medium</FontFamily>
+
+        <!-- Style for Buttons -->
+        <Style x:Key="NavButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontFamily" Value="{StaticResource PoppinsSemiBold}"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
+
+        <!-- Style for Active Button -->
+        <Style x:Key="ActiveButtonStyle" TargetType="Button" BasedOn="{StaticResource NavButtonStyle}">
+            <Setter Property="Background" Value="#4CAF50"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <Grid Margin="0,0,20,0">
+            <Border Background="White" CornerRadius="20" Padding="20">
+                <StackPanel>
+                    <!-- Header -->
+                    <TextBlock Text="Product Details" FontFamily="{StaticResource PoppinsBold}" FontSize="28" Foreground="#0A3D40" Margin="0,0,0,20"/>
+
+                    <!-- Product Information -->
+                    <TextBlock Text="Product ID:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <TextBlock x:Name="ProductIDTextBlock" FontFamily="{StaticResource PoppinsRegular}" FontSize="18" Foreground="#0A3D40" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Name:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <TextBlock x:Name="ProductNameTextBlock" FontFamily="{StaticResource PoppinsRegular}" FontSize="18" Foreground="#0A3D40" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Category:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <TextBlock x:Name="ProductCategoryTextBlock" FontFamily="{StaticResource PoppinsRegular}" FontSize="18" Foreground="#0A3D40" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Price:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <TextBlock x:Name="ProductPriceTextBlock" FontFamily="{StaticResource PoppinsRegular}" FontSize="18" Foreground="#0A3D40" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Stock Available:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <TextBlock x:Name="ProductStockTextBlock" FontFamily="{StaticResource PoppinsRegular}" FontSize="18" Foreground="#0A3D40" Margin="0,5,0,20"/>
+
+                    <!-- Total Amount -->
+                    <TextBlock Text="Total Amount:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <TextBlock x:Name="TotalAmountTextBlock" FontFamily="{StaticResource PoppinsRegular}" FontSize="18" Foreground="#4CAF50" Margin="0,5,0,20"/>
+
+                    <!-- Payment Method -->
+                    <TextBlock Text="Payment Method:" FontFamily="{StaticResource PoppinsSemiBold}" FontSize="20" Foreground="#0A3D40"/>
+                    <ComboBox x:Name="PaymentMethodComboBox" Margin="0,5,0,20" FontFamily="{StaticResource PoppinsRegular}" FontSize="18">
+                        <ComboBoxItem Content="Cash" IsSelected="True"/>
+                        <ComboBoxItem Content="Transfer"/>
+                    </ComboBox>
+
+                    <!-- Product Image -->
+                    <Image x:Name="ProductImage" Height="200" Margin="0,20,0,20"/>
+
+                    <!-- Purchase Button -->
+                    <Button Content="Purchase" Style="{StaticResource ActiveButtonStyle}" Width="200" Height="50" HorizontalAlignment="Center" Click="PurchaseButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

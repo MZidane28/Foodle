@@ -1,0 +1,570 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\sellercenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\sellercenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\manageorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\manageorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\driver\\driverdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:driver\\driverdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\dashboardpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\dashboardpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\driver\\driverdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:driver\\driverdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\driver\\driverprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:driver\\driverprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\driver\\driverprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:driver\\driverprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\manageorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\manageorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\accountprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\accountprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\buyproduct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\buyproduct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\orderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\orderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\buyproduct.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\buyproduct.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\customer\\accountprofile.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:customer\\accountprofile.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\sellerprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\sellerprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\sellerprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\sellerprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\project foodle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:project foodle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\uploaditem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\uploaditem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\sellercenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\sellercenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\seller\\uploaditem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:seller\\uploaditem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\messagespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\messagespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\registerpage2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\registerpage2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\registerpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\registerpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\registerpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\registerpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\registerpage2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\registerpage2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\foodle\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:foodle\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|c:\\users\\acer\\downloads\\project foodle (4)\\project foodle\\services\\googlemap.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7963AC4B-563D-4F3F-92F5-37C27D5C3D09}|Project Foodle.csproj|solutionrelative:services\\googlemap.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 241,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SellerCenter.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerCenter.xaml",
+              "RelativeDocumentMoniker": "Seller\\SellerCenter.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerCenter.xaml",
+              "RelativeToolTip": "Seller\\SellerCenter.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:08:38.577Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManageOrder.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\ManageOrder.xaml",
+              "RelativeDocumentMoniker": "Seller\\ManageOrder.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\ManageOrder.xaml",
+              "RelativeToolTip": "Seller\\ManageOrder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T16:10:28.343Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DriverDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "Driver\\DriverDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverDashboard.xaml.cs",
+              "RelativeToolTip": "Driver\\DriverDashboard.xaml.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAiwJAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T02:28:09.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashboardPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\DashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "Customer\\DashboardPage.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\DashboardPage.xaml.cs",
+              "RelativeToolTip": "Customer\\DashboardPage.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAmwDQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:19:57.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardPage.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\DashboardPage.xaml",
+              "RelativeDocumentMoniker": "Customer\\DashboardPage.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\DashboardPage.xaml",
+              "RelativeToolTip": "Customer\\DashboardPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T18:57:29.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DriverDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverDashboard.xaml",
+              "RelativeDocumentMoniker": "Driver\\DriverDashboard.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverDashboard.xaml",
+              "RelativeToolTip": "Driver\\DriverDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-25T02:01:47.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DriverProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverProfile.xaml",
+              "RelativeDocumentMoniker": "Driver\\DriverProfile.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverProfile.xaml",
+              "RelativeToolTip": "Driver\\DriverProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-25T02:02:12.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DriverProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverProfile.xaml.cs",
+              "RelativeDocumentMoniker": "Driver\\DriverProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Driver\\DriverProfile.xaml.cs",
+              "RelativeToolTip": "Driver\\DriverProfile.xaml.cs",
+              "ViewState": "AQIAALMAAAAAAAAAAAAUwNIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T02:28:23.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManageOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\ManageOrder.xaml.cs",
+              "RelativeDocumentMoniker": "Seller\\ManageOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\ManageOrder.xaml.cs",
+              "RelativeToolTip": "Seller\\ManageOrder.xaml.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAUwMEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:10:31.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\AccountProfile.xaml",
+              "RelativeDocumentMoniker": "Customer\\AccountProfile.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\AccountProfile.xaml",
+              "RelativeToolTip": "Customer\\AccountProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T19:03:45.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BuyProduct.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\BuyProduct.xaml.cs",
+              "RelativeDocumentMoniker": "Customer\\BuyProduct.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\BuyProduct.xaml.cs",
+              "RelativeToolTip": "Customer\\BuyProduct.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAD1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T02:34:52.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrdersPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\OrdersPage.xaml.cs",
+              "RelativeDocumentMoniker": "Customer\\OrdersPage.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\OrdersPage.xaml.cs",
+              "RelativeToolTip": "Customer\\OrdersPage.xaml.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAqwMEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:09:58.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrdersPage.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\OrdersPage.xaml",
+              "RelativeDocumentMoniker": "Customer\\OrdersPage.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\OrdersPage.xaml",
+              "RelativeToolTip": "Customer\\OrdersPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T03:13:00.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BuyProduct.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\BuyProduct.xaml",
+              "RelativeDocumentMoniker": "Customer\\BuyProduct.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\BuyProduct.xaml",
+              "RelativeToolTip": "Customer\\BuyProduct.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T04:57:34.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccountProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\AccountProfile.xaml.cs",
+              "RelativeDocumentMoniker": "Customer\\AccountProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Customer\\AccountProfile.xaml.cs",
+              "RelativeToolTip": "Customer\\AccountProfile.xaml.cs",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAIwNEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:03:48.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SellerProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerProfile.xaml",
+              "RelativeDocumentMoniker": "Seller\\SellerProfile.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerProfile.xaml",
+              "RelativeToolTip": "Seller\\SellerProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T16:11:18.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SellerProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerProfile.xaml.cs",
+              "RelativeDocumentMoniker": "Seller\\SellerProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerProfile.xaml.cs",
+              "RelativeToolTip": "Seller\\SellerProfile.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:11:19.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Project Foodle.csproj",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Project Foodle.csproj",
+              "RelativeDocumentMoniker": "Project Foodle.csproj",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Project Foodle.csproj",
+              "RelativeToolTip": "Project Foodle.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-25T02:01:15.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UploadItem.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\UploadItem.xaml.cs",
+              "RelativeDocumentMoniker": "Seller\\UploadItem.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\UploadItem.xaml.cs",
+              "RelativeToolTip": "Seller\\UploadItem.xaml.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAD4v24AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T14:52:36.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SellerCenter.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerCenter.xaml.cs",
+              "RelativeDocumentMoniker": "Seller\\SellerCenter.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\SellerCenter.xaml.cs",
+              "RelativeToolTip": "Seller\\SellerCenter.xaml.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAMwE8AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T15:27:37.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UploadItem.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\UploadItem.xaml",
+              "RelativeDocumentMoniker": "Seller\\UploadItem.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Seller\\UploadItem.xaml",
+              "RelativeToolTip": "Seller\\UploadItem.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T05:05:44.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MessagesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\MessagesPage.xaml",
+              "RelativeDocumentMoniker": "Foodle\\MessagesPage.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\MessagesPage.xaml",
+              "RelativeToolTip": "Foodle\\MessagesPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-25T01:32:29.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Foodle\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\LoginPage.xaml",
+              "RelativeToolTip": "Foodle\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:32:32.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Foodle\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Foodle\\LoginPage.xaml.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAcwHMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T15:41:22.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegisterPage2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage2.xaml.cs",
+              "RelativeDocumentMoniker": "Foodle\\RegisterPage2.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage2.xaml.cs",
+              "RelativeToolTip": "Foodle\\RegisterPage2.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAADwvzUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:04:13.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\acer\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs",
+              "ViewState": "AQIAAPUDAAAAAAAAAAAwwB0EAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T15:42:27.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T15:48:06.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterPage1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage1.xaml.cs",
+              "RelativeDocumentMoniker": "Foodle\\RegisterPage1.xaml.cs",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage1.xaml.cs",
+              "RelativeToolTip": "Foodle\\RegisterPage1.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwDAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:04:09.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:47:37.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:52:37.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RegisterPage1.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage1.xaml",
+              "RelativeDocumentMoniker": "Foodle\\RegisterPage1.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage1.xaml",
+              "RelativeToolTip": "Foodle\\RegisterPage1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:38:29.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RegisterPage2.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage2.xaml",
+              "RelativeDocumentMoniker": "Foodle\\RegisterPage2.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\RegisterPage2.xaml",
+              "RelativeToolTip": "Foodle\\RegisterPage2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:38:30.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SettingsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\SettingsPage.xaml",
+              "RelativeDocumentMoniker": "Foodle\\SettingsPage.xaml",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Foodle\\SettingsPage.xaml",
+              "RelativeToolTip": "Foodle\\SettingsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-24T15:38:31.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GoogleMap.html",
+              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Services\\GoogleMap.html",
+              "RelativeDocumentMoniker": "Services\\GoogleMap.html",
+              "ToolTip": "C:\\Users\\acer\\Downloads\\Project Foodle (4)\\Project Foodle\\Services\\GoogleMap.html",
+              "RelativeToolTip": "Services\\GoogleMap.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T19:39:56.968Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
