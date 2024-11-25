@@ -1,0 +1,16 @@
+﻿<Application x:Class="Project_Foodle.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Project_Foodle"
+             StartupUri="Foodle/LoginPage.xaml">
+    <!-- App.xaml -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <FontFamily x:Key="PoppinsBold">pack://application:,,,/Resources/Fonts/Poppins-Bold.ttf#Poppins Bold</FontFamily>
+            <FontFamily x:Key="PoppinsRegular">pack://application:,,,/Resources/Fonts/Poppins-Regular.ttf#Poppins Regular</FontFamily>
+            <FontFamily x:Key="PoppinsSemiBold">pack://application:,,,/Resources/Fonts/Poppins-SemiBold.ttf#Poppins Semi Bold</FontFamily>
+            <FontFamily x:Key="PoppinsMedium">pack://application:,,,/Resources/Fonts/Poppins-Medium.ttf#Poppins Medium</FontFamily>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
