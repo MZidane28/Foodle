@@ -1,4 +1,4 @@
-﻿<Page x:Class="Project_Foodle.Driver.DriverProfile"
+<Page x:Class="Project_Foodle.Driver.DriverProfile"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="DriverProfile"
@@ -65,7 +65,8 @@
                         <Button Content="Log Out" 
                                 Style="{StaticResource InactiveButtonStyle}" 
                                 Foreground="White" 
-                                Height="54" Margin="-5,0,0,0"/>
+                                Height="54" Margin="-5,0,0,0"
+                                Click="LogOutButton_Click"/>
                     </Border>
                 </StackPanel>
             </Grid>
